@@ -1,31 +1,5 @@
 The concepts of **pattern** and **matching** (via pattern-to-pattern comparison) are important for learning regex.
 
-## Visual Studio Code
-
-### Find all CSS classes
-
-```
-class=".*?"
-```
-
-In this code `.*?` matches any character but as few as possible (non-greedy).
-
-### Change all whitespace character indentations to indentation character indentations, and, in the end of each relevant line -- add a comma after each single quote mark
-
-* Click `CTRL+Shift+P`, then choose Convert indentation to Tabs
-* When deleting all lines, hitting Enter in the replace field might not be enough and we'll need to click the replace button instead
-* Add comma in the end of each line:
-
-```
-SEARCH:
-
-'$
-
-REPLACE:
-
-',
-```
-
 ## Common regex
 
 Common regex (POSIX/PCRE/Emacs) primarily use to search (match) data inside files.
@@ -170,6 +144,32 @@ To find a letter argument until a space in `man` do:
 1. Replace with
 1. **Result by code (`Four_whitespace_characters_code`)**<br>
    **Result by quote (`>`)**
+
+## Visual Studio Code
+
+### Find all CSS classes
+
+```
+class=".*?"
+```
+
+In this code `.*?` matches any character but as few as possible (non-greedy).
+
+### Change all whitespace character indentations to indentation character indentations, and, in the end of each relevant line -- add a comma after each single quote mark
+
+* Click `CTRL+Shift+P`, then choose Convert indentation to Tabs
+* When deleting all lines, hitting Enter in the replace field might not be enough and we'll need to click the replace button instead
+* Add comma in the end of each line:
+
+```
+SEARCH:
+
+'$
+
+REPLACE:
+
+',
+```
 
 ### Notes
 
